@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #831843, #f472b6);
+  color: white;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 25px;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  color: #fbcfe8;
+}
+
+.autor {
+  color: #f472b6;
+  font-size: 0.9rem;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #f472b6;
+  background: #9d174d;
+  color: white;
+}
+
+input::placeholder {
+  color: #fbcfe8;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #f472b6;
+  color: #831843;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ec4899;
+  transform: scale(1.05);
+}
+
+/* WEATHER CARD */
+.weather-card {
+  background: rgba(157, 23, 77, 0.85);
+  border-left: 5px solid #f472b6;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: fadeIn 0.6s ease-in-out;
+  line-height: 1.6;
+}
+
+.weather-card h2, .weather-card h3 {
+  color: #fbcfe8;
+}
+
+/* ICONOS */
+.weather-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+.description {
+  font-size: 14px;
+  background: #831843;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.geo-data {
+  font-size: 13px;
+  color: #fbcfe8;
+}
+
+.weather-data h4 {
+  margin: 5px 0;
+  color: #fbcfe8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.success-footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fbcfe8;
+  font-weight: bold;
+}
+
+/* MAPA */
+.map-container {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima México Pro</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONOS (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1><i class="fa-solid fa-cloud-sun"></i> 🌈API Clima México🌈</h1>
+    <p>Servicio meteorológico profesional en tiempo real</p>
+    <p class="autor">Perez Dotor Ericka Joselyne</p>
+  </header>
+
+  <main class="container">
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Ej. Toluca, Estado de México">
+      <button id="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i> Buscar
+      </button>
+    </div>
+
+    <div id="weather-card" class="weather-card">
+      <p>Introduce una ubicación para desplegar las coordenadas y descripción geográfica.</p>
+    </div>
+
+    <div class="map-container">
+      <iframe id="map-frame" loading="lazy"></iframe>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
